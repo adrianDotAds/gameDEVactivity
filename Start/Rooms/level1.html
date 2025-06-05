@@ -1,0 +1,57 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<meta charset="utf-8">
+		<title>Level 1</title>
+
+	</head>
+	<body>
+		<audio id="bgm" src="bgm.mp3" loop="loop"></audio>
+		<div id="L1-room">
+			<img id="L1-door" src="L1-door.png">
+			<img id="L1-lock" src="L1-lock.png" onclick="L1_tryLock()">
+			<img id="L1-openchest" src="L1-openchest.png">
+			<img id="L1-key" src="L1-key.png" onclick="L1_getKey()">
+			<img id="L1-closechest" src="L1-closechest.png" onclick="L1_tryCloseChest()">
+			<img id="L1-crumpledpaper" src="L1-crumpledpaper.png" onclick="L1_tryCrumpledPaper()">
+			<img id="L1-gong" src="L1-gong.png" onclick="L1_tryGong()">
+			<img id="L1-chesthint" src="L1-chesthint.png">
+			<img id="L1-portal" src="L5-portal.gif" onclick="location.href ='lvl1.html'">
+			<div id="L1-popUpNote">
+				<h1><br>"Guess the numbers."</br>"Hit me once, seek my sound.<br>For every beat can break this ground."</br></h1>
+				<div class="L1-numInput">
+					<input class="L1-inputs" type="text" id="L1-0" maxlength="1" onfocus="this.value=''">
+					<input class="L1-inputs" type="text" id="L1-1" maxlength="1" onfocus="this.value=''">
+					<button id="L1-popUpBack" onclick="L1_HidePopUp()">BACK</button>
+					<button id="L1-popUpEnter" onclick="L1_EnterPopUp()">ENTER</button>
+				</div>
+			</div>
+			<div id="L1-chestlock">
+				<p>Enter lock combination</p>
+				<div class="L1-combA">
+					<input type="radio" name="L1-combA" id="L1-combA1">
+					<label for="L1-combA1">r</label>
+					<input type="radio" name="L1-combA" id="L1-combA2">
+					<label for="L1-combA2">k</label>
+					<input type="radio" name="L1-combA" id="L1-combA3">
+					<label for="L1-combA3">b</label>
+					<input type="radio" name="L1-combA" id="L1-combA4">
+					<label for="L1-combA4">a</label>
+				</div>
+				<div class="L1-combB">
+					<input type="radio" name="L1-combB" id="L1-combB1">
+					<label for="L1-combB1">n</label>
+					<input type="radio" name="L1-combB" id="L1-combB2">
+					<label for="L1-combB2">w</label>
+					<input type="radio" name="L1-combB" id="L1-combB3">
+					<label for="L1-combB3">e</label>
+					<input type="radio" name="L1-combB" id="L1-combB4">
+					<label for="L1-combB4">g</label>
+				</div>
+				<button id="L1-back" onclick="L1_chestlockBack()">BACK</button>
+				<button id="L1-enter" onclick="L1_chestlockEnter()">ENTER</button>
+			</div>
+		</div>	
+	</body>
+</html>

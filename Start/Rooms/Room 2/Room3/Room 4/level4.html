@@ -1,0 +1,53 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<meta charset="utf-8">
+		<title>Level 4</title>
+	</head>
+	
+	<body>
+	<div id="L4-room">
+		<img id="L4-matchgame" src="L4-matchgame.png" onclick="L4_matchgame()">
+		<img id="L4-hint5" src="L4-hint5.png">
+		<img id="L4-hint7" src="L4-hint7.png">
+		<img id="L4-innerbrick" src="L4-innerbrick.png">
+		<img id="L4-opentorch" src="L4-opentorch.png">
+		<img id="L4-torch" src="L4-torch.png" onclick="L4_secretCompartment()">
+		<img id="L4-key" src="L4-key.png" onclick="L4_getKey()">
+		<img id="L4-lock" src="L4-lock.png" onclick="L4_tryDoor()">
+		<img id="L4-portal" src="L4-portal.gif" onclick="location.href ='lvl4.html'">
+		<div id="L4-chestlock">
+				<p>"Enter number combination"</p>
+				<div class="L4-combA">
+					<input type="radio" name="L4-combA" id="L4-combA1">
+					<label for="L4-combA1">1</label>
+					<input type="radio" name="L4-combA" id="L4-combA2">
+					<label for="L4-combA2">2</label>
+					<input type="radio" name="L4-combA" id="L4-combA3">
+					<label for="L4-combA3">3</label>
+				</div>
+				<div class="L4-combB">
+					<input type="radio" name="L4-combB" id="L4-combB1">
+					<label for="L4-combB1">4</label>
+					<input type="radio" name="L4-combB" id="L4-combB2">
+					<label for="L4-combB2">5</label>
+					<input type="radio" name="L4-combB" id="L4-combB3">
+					<label for="L4-combB3">6</label>
+				</div>
+				<div class="L4-combC">
+					<input type="radio" name="L4-combC" id="L4-combC1">
+					<label for="L4-combC1">7</label>
+					<input type="radio" name="L4-combC" id="L4-combC2">
+					<label for="L4-combC2">8</label>
+					<input type="radio" name="L4-combC" id="L4-combC3">
+					<label for="L4-combC3">9</label>
+				</div>
+				<button id="L4-back" onclick="L4_chestlockBack()">BACK</button>
+				<button id="L4-enter" onclick="L4_chestlockEnter()">ENTER</button>
+		
+	</div>
+	
+	</body>
+	
+</html>

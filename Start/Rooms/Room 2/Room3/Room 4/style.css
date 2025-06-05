@@ -1,0 +1,251 @@
+body {
+	margin: 0;
+	padding: 0; 
+	background: black;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/******************************************************** LEVEL 4 ********************************************************/
+#L4-room {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 1365px;
+	height: 660px;
+	background-image: url("L4-room.png");
+	transition: 1s
+}
+
+
+#L4-room img:hover {
+	transform: scale(1.3);
+	z-index: 2;
+}
+
+#L4-matchgame {
+	position: absolute;
+	top: 461px;
+	left: 1174px;
+	cursor: pointer;
+}
+
+#L4-hint5 {
+	position: absolute;
+	top: 41px;
+	left: 300px;
+	cursor: pointer;
+}
+
+#L4-hint7 {
+	position: absolute;
+	top: 278px;
+	left: 1028px;
+	cursor: pointer;
+}
+
+#L4-innerbrick {
+	position: absolute;
+	top: 195px;
+	left: 63px;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+#L4-torch {
+	position: absolute;
+	top: 162px;
+	left: 204px;
+	cursor: pointer;
+}
+
+#L4-chestlock {
+	position:absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 530px;
+	height: 530px;
+	border: 10px solid black;
+	border-radius: 250px;
+	background-color: gray;
+	color: white;
+	font-family: Courier New;
+	visibility: hidden;
+}
+
+#L4-chestlock p{
+	position: absolute;
+	top: 15%;
+	left: 18%;
+	font-size: 24px; 
+	font-family: Courier New; 
+	color: white;
+	font-weight: bold;
+}
+
+#L4-chestlock input[type="radio"]{
+	display: none;
+}
+
+.L4-combA {
+	position: absolute;
+	top: 23%;
+	left: 23%;
+	width: 252px;
+	height: 85px;
+	margin: 20px;
+}
+
+.L4-combB {
+	position: absolute;
+	top: 39%;
+	left: 23%;
+	width: 252px;
+	height: 85px;
+	margin: 20px;
+}
+
+.L4-combC {
+	position: absolute;
+	top: 55%;
+	left: 23%;
+	width: 252px;
+	height: 85px;
+	margin: 20px;
+}
+
+#L4-chestlock .L4-combA label {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0;
+	display: inline-block;
+	color:  white;
+	font-weight: bold;
+	font-size: 50px;
+	border: 2px solid white;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.0);
+	text-align: center;
+
+}
+
+#L4-chestlock .L4-combB label {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0;
+	display: inline-block;
+	color:  white;
+	font-weight: bold;
+	font-size: 50px;
+	border: 2px solid white;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.0);
+	text-align: center;
+}
+
+#L4-chestlock .L4-combC label {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 0;
+	display: inline-block;
+	color:  white;
+	font-weight: bold;
+	font-size: 50px;
+	border: 2px solid white;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,0.0);
+	text-align: center;
+}
+
+#L4-chestlock label:hover {
+	box-shadow: 0 0 8px 8px white;
+}
+
+#L4-chestlock input[type="radio"]:checked + label {
+	box-shadow: 0 0 8px 8px white;
+}
+
+
+#L4-chestlock #L4-enter {
+	position: absolute;
+	top: 78%;
+	left: 57%;
+	width: 100px;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	font-family: Courier New;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+#L4-chestlock #L4-enter:hover {
+	box-shadow: 0 0 10px 10px white;
+}
+
+#L4-chestlock #L4-back {
+	position: absolute;
+	top: 78%;
+	left: 24%;
+	width: 100px;
+	height: 50px;
+	background-color: black;
+	text-align: center;
+	font-family: Courier New;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+#L4-chestlock #L4-back:hover {
+	box-shadow: 0 0 10px 10px white;
+}
+
+#L4-opentorch {
+	position: absolute;
+	top: 201px;
+	left: 231px;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+#L4-key {
+	position: absolute;
+	top: 218px;
+	left: 95px;
+	visibility: hidden;
+	transition: 1s;
+	cursor: grab;
+}
+
+#L4-lock {
+	position: absolute;
+	top: 272px;
+	left: 781px;
+	transition: 1s;
+	cursor: grab;
+}
+
+#L4-portal {
+	position: absolute;
+	width: 700px;
+	height: 700px;
+	top: -98px;
+	left: 336px;
+	cursor: pointer;
+	visibility: hidden;
+}

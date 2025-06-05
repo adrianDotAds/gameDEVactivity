@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Room 3</title>
+        <link rel="stylesheet" href="room3.css">
+        <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+        <script src="room3.js"></script>
+    </head>
+    <body>
+        <button id="get" onclick="alert('Key Obtained!'); obtainKey(); transpar()">Get</button>
+        <div id="objects">
+            <img id='key' src="images/keysCursed.png" onclick="popup()">
+            <img id='barrel' src="images/barrel.png" onclick="barrelpop()">
+            <img id='painting' src="images/painting.png" onclick="painting()">
+            <img id='scroll' src="images/scroll.png" onclick="scrollpop()">
+            <img id='paper' src="images/paper.png" onclick="crumpPaperpop()">
+            <img id='sesar' src="images/sesar.png" onclick="sesarpop()">
+            <img id='bell' src="images/bell.png" onclick="playBell()">
+            <img id='mona' src="images/mona.gif">
+            <img id='keyfall' src="images/keys.png" onclick="obtainKey()">
+            <img id='lockedDoor' src="images/lock.png" onclick="unlocked()">
+            <img id="portal" src="portal.gif" onclick="location.href ='lvl5.html'">
+        </div>     
+        <div id="pop-up">
+            <h1 id="opentxt">"Jopeng" The Ghost</h1>
+            <img id='pop1' src="images/ghost.png">
+            <h1 id="open" onclick="addWordOpen()">open</h1>
+            <span onclick="popout()">&times;</span>
+        </div>
+        <div id="paintingpop">
+            <h1 id="">There's someone missing on this painting</h1>
+            <h3 id="">You must collect.... what?</h3>
+            <h2 id="qmark" onclick="crumpledPaperShow()">?</h2>
+            <p id="warning">Someone was imprisoned here before</p>
+            <img src="images/mona.jpg">
+            <span onclick="paintingout()">&times;</span>
+        </div>
+        <div id="scrollpop">
+            <p>The cursed words are alive!
+            <br>They are all over the place</p>
+            <h1 id="cursedWord">Open Sesame!</h1>
+            <img src="images/scrollOpen.png">
+            <span onclick="scrollout()">&times;</span>
+        </div>
+        <div id="sesarpop">
+            <p>Sesar Julius</p>
+            <h1 id="sesa" onclick="addWordSesa()">Sesa</h1>
+            <img src="images/sesar.png">
+            <span onclick="sesarout()">&times;</span>
+        </div>
+        <div id="barrelpop">
+            <h1 id="me" onclick="addWordMe()">Me</h1>
+            <h2>There's a message inside the barrel!!</h2>
+            <img src="images/message.png">
+            <span onclick="barrelout()">&times;</span>
+        </div>
+        <div id="crumpPaper">
+            <p></p>
+            <img src="images/crumpOpen.png">
+            <span onclick="crumpPaperout()">&times;</span>
+        </div>
+    </body>
+</html>

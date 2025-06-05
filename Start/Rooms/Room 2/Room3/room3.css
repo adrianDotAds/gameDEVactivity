@@ -1,0 +1,427 @@
+body, html {
+    height: 100%;
+    overflow: hidden;
+    /* The image used */
+    background-image: url("images/room 3.png");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#objects {
+    position: relative;
+}
+#lockedDoor{
+    position: absolute;
+    margin-top: 243px;
+    margin-left: 616px;
+    height: 357px;
+    width: 300px;
+    display: block;
+}
+#lockedDoor:hover{
+    transform:scale(1.05);
+}
+#get{
+    display: none;
+    position:absolute;
+    margin-top: 350px;
+    margin-left: 200px;
+}
+#paper {
+    position: absolute;
+    width:30px;
+    height:30px;
+    margin-top: 350px;
+    margin-left: 303px;
+    display: none;
+}
+#paper:hover {
+    transform:scale(1.5);
+}
+#key{
+    margin-top: 300px;
+    margin-left: 100px;
+    position: absolute;
+    width:80px;
+    height:80px;
+}
+#keyfall{
+    position:absolute;
+    z-index: 2;
+    margin-top: 300px;
+    margin-left: 100px;
+    position: absolute;
+    width:80px;
+    height:80px;
+    display: none;
+}
+#keyfall:hover {
+    transform:scale(1.1);
+}
+#key:hover {
+    transform:scale(1.1);
+}
+#crumpPaper {
+    display: none;
+}
+#mona{
+    display:none;
+    position:absolute;
+    margin-top: 200px;
+    margin-left: 512px;
+    width:100px;
+    height:150px;
+}
+#crumpPaper img {
+    position:absolute;
+    animation-name: scale-in-ver-bottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 250px;
+    object-fit: cover;
+}
+#crumpPaper span{
+    position: absolute;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+#barrel{
+    height: 100%;
+    margin-top: 420px;
+    margin-left: 182px;
+    position: absolute;
+    width:270px;
+    height:300px;
+}
+#bell{
+    margin-top: 55px;
+    margin-left: 1238px;
+    height: 75px;
+    position: absolute;
+    display:block;
+}
+#bell:hover {
+    transform:scale(1.1);
+}
+#barrel:hover {
+    transform:scale(1.1);
+}
+#painting{
+    height: 100%;
+    margin-top: 172px;
+    margin-left: 460px;
+    position: absolute;
+    width:205px;
+    height:208px;
+}
+#painting:hover {
+    transform:scale(1.1);
+}
+#warning{
+    animation: flicker-out-1 1s linear infinite;
+    position:absolute;
+    margin-top: 600px;
+    margin-left: 630px;
+    color: white;
+    display:none;
+}
+#paintingpop {
+    animation: flicker-out-1 1s linear infinite;
+    display: none;
+}
+#paintingpop img {
+    position:absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 250px;
+    object-fit: cover;
+}
+#paintingpop span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+#paintingpop h1{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 400px;
+    z-index: 2;
+    color: wheat;
+}
+#paintingpop h3{
+    position: absolute;
+    margin-top: 165px;
+    margin-left: 400px;
+    z-index: 2;
+    color: wheat;
+}
+#paintingpop h2{
+    position: absolute;
+    font-size: 150px;
+    margin-top: 300px;
+    margin-left: 720px;
+    z-index: 2;
+    color: #dad196;
+}
+#paintingpop h2:hover{
+    transform:scale(1.1);
+}
+#sesar{
+    margin-top: 120px;
+    margin-left: 870px;
+    position: absolute;
+    height: 320px;
+    width: 326px;
+}
+#sesar:hover {
+    transform:scale(1.1);
+}
+#sesarpop img {
+    position:absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+#sesarpop span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+#barrelpop h2{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 400px;
+    z-index: 1;
+    color: wheat;
+}
+#barrelpop img {
+    position:absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+#barrelpop span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+#barrelpop h2{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 400px;
+    z-index: 1;
+    color: wheat;
+}
+#scrollpop{
+    display:none;
+    z-index:-1;
+}
+#sesarpop{
+    display:none;
+    z-index:-1;
+}
+#barrelpop{
+    display:none;
+    z-index:-1;
+}
+#scrollpop span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+#sesarpop p{
+    position: absolute;
+    font-size:20px;
+    font-family: 'Creepster', cursive;
+    color: black;
+    margin-top: 490px;
+    margin-left: 720px;
+    z-index: 1;
+}
+#sesa{
+    position: absolute;
+    color: green;
+    font-size:20px;
+    font-family: 'Creepster', cursive;
+    margin-top: 490px;
+    margin-left: 720px;
+    z-index:1;
+}
+#sesa:hover {
+    color:black;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+#me{
+    position: absolute;
+    color: green;
+    font-size:80px;
+    font-family: 'Creepster', cursive;
+    margin-top: 340px;
+    margin-left: 600px;
+    z-index:1;
+}
+#me:hover {
+    color:black;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+#scrollpop p{
+    position: absolute;
+    color: brown;
+    margin-top: 300px;
+    margin-left: 600px;
+    z-index: 1;
+}
+#scrollpop h1 {
+    position: absolute;
+    font-family: 'Creepster', cursive;
+    font-size: 60px;
+    color: green;
+    margin-top: 400px;
+    margin-left: 620px;
+    z-index:2;
+    animation: vibrate-3 0.5s linear infinite both;
+}
+#scrollpop img {
+    position:absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+#scroll{
+    height: 100%;
+    margin-top: 700px;
+    margin-left: 850px;
+    position: absolute;
+    width:140px;
+    height:100px;
+}
+#scroll:hover {
+    transform:scale(1.1);
+}
+#pop-up{
+    display: none;
+}
+#opentxt{
+    position: absolute;
+    color: white;
+    font-family: 'Creepster', cursive;
+    margin-top: 220px;
+    margin-left: 380px;
+}
+#open{
+    position: absolute;
+    color: green;
+    font-family: 'Creepster', cursive;
+    margin-top: 220px;
+    margin-left: 400px;
+}
+#open:hover {
+    color:black;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+#pop-up span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+#pop-up img {
+    position:absolute;
+    top: 50%; left:50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+    display: none;
+}
+#portal{
+    position: absolute;
+    z-index: 2;
+    top:150px;
+    left: 510px;
+    display: none;
+}
+
+
+
+
+@keyframes vibrate-3 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  @keyframes flicker-out-1 {
+    0%, 50%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0.3;
+    }
+  }
+  @keyframes scale-in-ver-bottom {
+    0% {
+      transform: scaleY(0.1);
+      transform-origin: 50% 100%;
+      animation-timing-function: ease-out;
+      opacity: 0;
+    }
+    100% {
+      transform: scaleY(1);
+      transform-origin: 50% 100%;
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+}

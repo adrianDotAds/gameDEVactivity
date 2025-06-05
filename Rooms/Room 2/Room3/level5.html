@@ -1,0 +1,56 @@
+<!doctype html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
+		<meta charset="utf-8">
+		<title>Level 5</title>
+	</head>
+	<body>
+		<div id="L5-room">
+			<img id="L5-painting" src="L5-painting.png" onclick="L5_showpuzzle()">
+			<img id="L5-closechest" src="L5-closechest.png" onclick="L5_tryCloseChest()">
+			<img id="L5-openchest" src="L5-openchest.png">
+			<img id="L5-key" src="L5-key.png" onclick="L5_getKey()">
+			<img id="L5-glassbox" src="L5-glassbox.png" onclick="L5_tryGlassBox()">
+			<img id="L5-pearl" src="L5-pearl.png" onclick="L5_getPearl()">
+			<img id="L5-door" src="L5-door.png" onclick="L5_tryDoor()">
+			<img id="L5-portal" src="L5-portal.gif" onclick="location.href ='levelcomplete.html'">
+			<div id="L5-puzzlecontainer">
+				<div id="L5-board"></div>
+				<h1>Turns: <span id="turns">0</span></h1>
+				<button id="L5-hidepuzzle" onclick="L5_HidePuzzle()">BACK</button>
+				<button id="L5-enterpuzzle" onclick="L5_EnterPuzzle()">ENTER</button>
+				<p id="demo"></p>
+			</div>
+				<div id="L5-chestlock">
+				<p>"1 two 3 four 5 6 7 eight"</p>
+				<div class="L5-combA">
+					<input type="radio" name="L5-combA" id="L5-combA1">
+					<label for="L5-combA1">1</label>
+					<input type="radio" name="L5-combA" id="L5-combA2">
+					<label for="L5-combA2">2</label>
+					<input type="radio" name="L5-combA" id="L5-combA3">
+					<label for="L5-combA3">3</label>
+				</div>
+				<div class="L5-combB">
+					<input type="radio" name="L5-combB" id="L5-combB1">
+					<label for="L5-combB1">4</label>
+					<input type="radio" name="L5-combB" id="L5-combB2">
+					<label for="L5-combB2">5</label>
+					<input type="radio" name="L5-combB" id="L5-combB3">
+					<label for="L5-combB3">6</label>
+				</div>
+				<div class="L5-combC">
+					<input type="radio" name="L5-combC" id="L5-combC1">
+					<label for="L5-combC1">7</label>
+					<input type="radio" name="L5-combC" id="L5-combC2">
+					<label for="L5-combC2">8</label>
+					<input type="radio" name="L5-combC" id="L5-combC3">
+					<label for="L5-combC3">9</label>
+				</div>
+				<button id="L5-back" onclick="L5_chestlockBack()">BACK</button>
+				<button id="L5-enter" onclick="L5_chestlockEnter()">ENTER</button>
+			</div>
+		</div>
+	</body>
+</html>

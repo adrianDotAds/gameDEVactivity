@@ -1,0 +1,241 @@
+body{
+    overflow: hidden;
+}
+:root{
+    --bgcol:#37474F;
+    --mcol0:#29B6F6;
+    --mcol1:#2196F3;
+    --mcol2:#1976D2;
+    --txtcol0:#90A4AE;
+    --txtcol1:#607D8B;
+    --whitecol:#ECEFF1;
+    --darkcol:#263238;
+}
+#puzzle_container{
+    margin-top: 250px;
+    margin-left: 587px;
+    position: absolute;
+    width: 30vh;
+    height:30vh;
+    background-color:var(--darkcol);
+    border-radius:3px;
+    border:1px solid var(--mcol0);
+    box-shadow:0px 8px 0px var(--mcol0);
+    z-index: 2;
+    display:block;
+}
+.puzzle_block{
+    position:absolute;
+    left:0;
+    top:0;
+    width:79px;
+    height:75px;
+    background-color:var(--txtcol1);
+    color:var(--whitecol);
+    font-size:5vh;
+    font-weight:bold;
+    text-align:center;
+    padding-top:3%;
+    cursor: pointer;
+    user-select:none;
+    transition:left 0.3s,top 0.3s;
+}
+#bgRoom2{
+    position: absolute;
+    z-index: 0;
+    width: 1523px;
+    height: 890px;
+}
+#door{
+    position:absolute;
+    z-index: 1;
+    top: 270px;
+	left: 90px;
+    height: 400px;
+    width: 200px;
+    display: block;
+}
+#lock{
+    position:absolute;
+    z-index: 1;
+    top: 420px;
+	left:100px;
+    height: 150px;
+    width: 180px;
+    display: block;
+}
+#lock:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#curtain{
+    position:absolute;
+    z-index: 4;
+    top: 0px;
+	left: 0px;
+}
+#curtain:hover {
+	transform: scale(1.1);
+	z-index: 0;
+}
+#chair1{
+    position:absolute;
+    z-index: 1;
+    top: 350px;
+	left: 280px;
+}
+#chair1:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#chair2{
+    position:absolute;
+    z-index: 1;
+    top: 350px;
+	left: 880px;
+}
+#chair2:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#table{
+    position:absolute;
+    z-index: 5;
+    top: 500px;
+	left: 535px;
+    display:block;
+}
+#table:hover {
+	transform: scale(1.1);
+	z-index: 5;
+}
+#xtable{
+    position:absolute;
+    z-index: 3;
+    top: 500px;
+	left: 535px;
+    display:none;
+}
+#xtable:hover {
+	transform: scale(1.1);
+	z-index: 5;
+}
+#vase{
+    position:absolute;
+    z-index: 2;
+    top: 500px;
+	left: 1110px;
+}
+#magicWords{
+    position: absolute;
+    z-index: 2;
+    margin-top: 340px;
+    margin-left: 600px;
+}
+#magicWord{
+    position: absolute;
+    z-index: 2;
+    margin-top: 340px;
+    margin-left: 600px;
+}
+#submit{
+    position: absolute;
+    z-index: 2;
+    margin-top: 370px;
+    margin-left: 600px;
+}
+#vase:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#window{
+    position:absolute;
+    z-index: 1;
+    top: 50px;
+	left: 1140px;
+    display: block;
+}
+#window:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#hintWindow{
+    position:absolute;
+    z-index: 1;
+    top: 50px;
+	left: 1140px;
+    display: none;
+}
+#painting{
+    position:absolute;
+    z-index: 3;
+    top: 150px;
+	left: 560px;
+    display: block;
+}
+#painting:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#secretButton{
+    position:absolute;
+    z-index: 2;
+    top: 500px;
+	left: 870px;
+    width: 20px;
+    height: 20px;
+    cursor: grab;
+}
+#secretButton:hover {
+	transform: scale(1.1);
+	z-index: 2;
+}
+#turnOff{
+    margin-top: 550px;
+    margin-left: 780px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+#turnOn{
+    margin-top: 550px;
+    margin-left: 780px;
+    position: absolute;
+    z-index: 10;
+    display: none;
+}
+#detach{
+    position: absolute;
+    z-index: 5;
+    margin-top: 480px;
+    margin-left: 510px;
+    display: none;
+}
+#detachPaint{
+    position:absolute;
+    z-index: 0;
+    margin-top: 300px;
+    margin-left: 760px;
+    display: none;
+}
+#key{
+    position:absolute;
+    z-index: 5;
+    top: 520px;
+	left: 955px;
+    display:none;
+}
+#key:hover {
+	transform: scale(1.1);
+	z-index: 5;
+}
+#portal{
+    position: absolute;
+    z-index: 5;
+    top: 250px;
+    left:-50px;
+    cursor: pointer;
+}
+#portal{
+    display: none;
+}

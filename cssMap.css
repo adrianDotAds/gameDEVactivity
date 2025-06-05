@@ -1,0 +1,166 @@
+#ph{
+    top: 100px;
+    left: 70px;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+}
+#bg{
+    height: 765px;
+    width: 1520px;
+    position: absolute;
+}
+#luzon{
+    top: 95px;
+    left:70px;
+    height: 225px;
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+#room1{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    border: solid brown 4px;
+    border-radius: 5%;
+    border-style: ridge;
+    width: 500px;
+    top: 120px;
+    left: 500px;
+    cursor: pointer;
+}
+#room2{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    border: solid brown 4px;
+    border-radius: 5%;
+    border-style: ridge;
+    width: 500px;
+    top: 410px;
+    left: 900px;
+    cursor: pointer;
+}
+#room3{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    border: solid brown 4px;
+    border-radius: 5%;
+    border-style: ridge;
+    width: 500px;
+    top: 120px;
+    left: 500px;
+    cursor: pointer;
+}
+#room4{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    border: solid brown 4px;
+    border-radius: 5%;
+    border-style: ridge;
+    width: 500px;
+    top: 410px;
+    left: 900px;
+    cursor: pointer;
+}
+#room5{
+    display:none;
+    position: absolute;
+    z-index: 2;
+    border: solid brown 4px;
+    border-radius: 5%;
+    border-style: ridge;
+    width: 500px;
+    top: 120px;
+    left: 500px;
+    cursor: pointer;
+}
+#luzon:hover{
+    transform:scale(1.1);
+}
+#visayas{
+    top: 324px;
+    left:72px;
+    height: 125px;
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+#visayas:hover{
+    transform:scale(1.1);
+}
+#mindanao{
+    top: 454px;
+    left:69px;
+    height: 145px;
+    width: 500px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+#mindanao:hover{
+    transform:scale(1.1);
+}
+#text1{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 1070px;
+    display: none;
+}
+#text2{
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 580px;
+    display: none;
+}
+#text3{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 1070px;
+    display: none;
+}
+#text4{
+    position: absolute;
+    z-index: 1;
+    top: 390px;
+    left: 580px;
+    display: none;
+}
+#text5{
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 1070px;
+    display: none;
+}
+#x{
+    position: absolute;
+    z-index: 1;
+}
+#x button:hover{
+    background-color: #51b59fb1;
+    color:white;
+}
+#retry{
+    position: absolute;
+    top: 600px;
+    left:300px;
+    background-color: green;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}

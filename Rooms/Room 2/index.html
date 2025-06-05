@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room 2</title>
+    <link rel="stylesheet" href="room2.css">
+</head>
+<body>
+    
+    <div id="puzzle_container">
+        <div class="puzzle_block">1</div>
+        <div class="puzzle_block">2</div>
+        <div class="puzzle_block">3</div>
+        <div class="puzzle_block">4</div>
+        <div class="puzzle_block">5</div>
+        <div class="puzzle_block">6</div>
+        <div class="puzzle_block">7</div>
+        <div class="puzzle_block">8</div>
+    </div>
+    <div id="bg">
+        <img id="bgRoom2" src="images/bgRoom2.png">
+    </div>
+    <button id = 'turnOff' onclick="hideOff(); offButton()">Off</button>
+    <button id = 'turnOn' onclick="hideOn(); onButton()">on</button>
+    <button id = 'detach' onclick="detach(); detachHideButton()">Detach</button>
+    <div id="objects">
+        <img id="door" src="images/door.png">
+        <img id="lock" src="images/lock.png" onclick="lock()">
+        <img id="curtain" src="images/curtain.png">
+        <img id="chair1" src="images/chair.png" onclick="nothing()">
+        <img id="chair2" src="images/chair.png" onclick="key()">
+        <img id="table" src="images/table.png" onclick="turnOffShow()">
+        <img id="xtable" src="images/xtable.png" onclick="turnOnShow()">
+        <img id="vase" src="images/vase.png" onclick="storeUserInput()">
+        <img id="window" src="images/window.png" onclick="hintWindow()">
+        <img id="painting" src="images/painting.png" onclick="detachShowButton()">
+        <img id="secretButton" src="images/circle.png" onclick="showHintWindow()">
+        <img id="detachPaint" src="images/detachPaint.png">
+        <img id="hintWindow" src="images/hintWindow.png">
+        <img id="key" src="images/key.png" onclick="removeLock(); showPortal()">
+        <img id="portal" src="portal.gif" onclick="location.href ='lvl2.html'">
+    </div>
+    <div id = 'magicWords'>
+        <audio id="myAudio" src="music/chant.mp3"></audio>
+        <audio id="myAudio2" src="music/chant2.mp3"></audio>
+    </div>
+
+    <script src="room2.js"></script>
+
+</body>
+</html>
